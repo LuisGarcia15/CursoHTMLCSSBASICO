@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        crea un enlace a otras páginas de internet, archivos o ubicaciones 
+        dentro de la misma página, direcciones de correo, o cualquier otra 
+        URL.
+    -->
+    <meta charset="UTF-8"/>
+    <!--Es buena practica cerrar todas las etiquetas vacias
+    aun cunado el navegador las quite-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Elementos Básicos en HTML</title>
+</head>
+<body>
+    <h1>Título H1</h1>
+    <a href="https://www.google.com.mx" target="_blank">Google</a>
+    <!--Anchor/ancla
+    href: atributo que nos permite definir una url para ir a esa
+    página. la url debe ir con las siglas de protocolo HTTPS ya que
+    es el valor de un documento basado en HTTPS.
+
+    target: atributo que permite, a la url de la etiqueta anchor,
+    abrirse en una nueva pestaña con el valor _blank.
+    
+    El contenido de la etiqueta puede ser una descripción de la
+    url a donde conduce-->
+    <br>
+
+    <a href="parrafos.html">Párrafos</a>
+    <!--<a> con el atributo href nos permite ir a un recurso html
+    propio, siempre y cuando escribamos el path donde se encuentra
+    ese recurso. Actualmente como se encuentra en la misma carpeta,
+    solo se coloca el recurso objetivo.
+
+    href puede no solo contener documentos basados en protocolo HTTP,
+    puede tener distintos valores, como los son file,ftp, mailto o tel
+    donde mailto es un correo web, y tel un número celular.-->
+    <br>
+    <a href="mailto:luis200107@icloud.com">Correo personal</a>
+    <br>
+    <a href="tel:5614790104">Número celular</a>
+</body>
+</html>
