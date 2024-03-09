@@ -13,31 +13,46 @@
     <p style="color:rgb(8, 169, 249)">Color por RGB</p>
     <p style="color:rgba(8, 169, 249,.5)">Color por RGB con transparencia</p>
     <p style="color: hsl(114, 50%, 49%)"> Color por códgio HSL</p>
-    <p style="color: hsla(0, 62%, 48%)"> Color por códgio HSLA</p>
-    <p style="color: #ff6f00;">Color por exadecimal</p>
+    <p style="color: hsla(0, 62%, 48%, .5)"> Color por códgio HSL con tranparencia</p>
+    <p style="color: #ff6f00;">Color por hexadecimal</p>
     <!--Style: permite definir valores de tipo CSS
+
+        Todos los colores se pueden representar en RGB, HSL y HEXADECIMAL y son
+        definidos en el parámetro color en la etiqueta Style pues es una particularidad
+        de CSS.
+
         color: permite definir el color de una etiqueta
-        por nombre, por rgb(0,0,0), rgba(0,0,0,0) donde la a
+        por nombre, por rgb(0,0,0), rgba(0,0,0,0)
+        
+        Donde la "a"
         significa ser el canal alfa de transparencia para así indicar
         que tan transparente se coloca un color, donde 1 no hay tranparencia,
         0 aplica toda la tranferencia por lo que se elimina el color del
         elemento y .5 para obtener el 50% de transparencia
-        en un elemento de etiqueta, tambien  el color puede ser definido
+        en un elemento de etiqueta.
+        
+        Tambien  el color puede ser definido
         por un códgio hsl(0, %, %), donde el primer parámetro es es el número
-        de color de una rueda de colores llamado hiu que pose 360 colores diferentes,
+        de color de una rueda de colores llamado "hiu" que pose 360 colores diferentes,
         el segundo parámetro es la saturación del color en porcentaje, donde 100 
         hace que el color sea el elegido, por ultimo, el tercer parámetro 
         es la ilumincación donde 0 es sin ilumnicación (negro) y el valor 100 es
          completamente iluminado (blanco).
 
-         hsla: donde la a significa ser el canal alfa de transparencia para así 
+         hsla: donde la "a" significa ser el canal alfa de transparencia para así 
          indicarque tan transparente se coloca un color, donce cero es transparente,
-         uno se obtiene el color real, .5 se tiene 50% de transparencia, funciona
-         igual a RGB.
+         uno se obtiene el color real, .5 se tiene 50% de transparencia, la transparencia
+         funciona igual a RGBA.
 
-        El color hexadecimal, es la repesentación en bits de una información y muy similr
-        a rgb, pues las primeras dos letras es corresponden al RGB, Red, Green, Blue
-         
+        El color hexadecimal, es la repesentación en bits de una información pudiendo colocar
+        2 elevado a la  16 combinaciones de colores, manejando combinaciones con valores de 
+        0 - 9 y letras de A - F, siendo 0 el valor mínimo y F el valor máximo. Muy similar 
+        a rgb, pues cada dos pares corresponde a los valores RGB
+        Red, Green, Blue
+        #00   00      00 [Negro]
+        Si cada par es el mismo valor, puede omitirse un valor de cada par
+        #0     0      0 [Negro]
+        
     -->
 
     <!--La página HTML Color Names proporciona todos los nombres
