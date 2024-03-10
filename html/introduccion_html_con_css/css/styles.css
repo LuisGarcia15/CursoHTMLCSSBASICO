@@ -1,0 +1,19 @@
+/*Un archivo CSS permite declarar estilos a etiquetas y que ese archivo
+css sirva para varios archivos css
+
+Son hojas de estilo en cascada, ya que si se aplica a un elemento padre
+o superior, los elementos hijos o inferiores serán afectados*/
+body{
+    background-color: aquamarine;
+}
+/*Los estilos de body afectan a todos los elementos internos de la etiqueta,
+a menos que de se establezca un valor diferente especificamente a un
+elemento interno.
+
+el color de fondo de body es diferente del color de fondo de pre pues 
+se definio un color distinto en pre*/
+pre{
+    color: green;
+    background-color: black;
+    font-style: italic;
+}

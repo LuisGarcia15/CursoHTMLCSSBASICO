@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Los estilos definidos internamente sobreescriben los estilos
+    definidos en un archivo, a menos que la definición del archivo sea
+    posterior a la definición de estilos en elementos-->
+
+    <meta charset="UTF-8"/>
+    <!--Es buena practica cerrar todas las etiquetas vacias
+    aun cunado el navegador las quite-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Elementos Básicos en HTML</title>
+    <!--Es posible utilizar CSS directo en html con su etiqueta <style>,
+        generalmente esta etiqueta se coloca como ultima etiqueta del
+        de head-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Link es una etiqueta que permite enlazar archivos al documento
+    html o especificar la relación entre el documento html actual y el
+    recurso externo, con la propiedad rel se indica su relación y con href 
+    el path donde se ubica ese archivo. En este caso enlazamos un archivo 
+    css al documento html-->
+    <style>
+        h1{
+            color:blue;
+        }
+        /*Al colocar el nombre de una etiqueta, indica
+        que todos los elementos CSS seran aplicados a las
+        etiquetas que se definen. En este caso, el color
+        aplicará a todos los títulos H1 de HTML sin exepción*/
+        p{
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colores en HTML</h1>
+    <!-- los elementos de CSS tienen un formato de propiedad:valor.
+    Usualmente se colocan en una archivo especial de hojas de estilos
+    con extensión .css
+    color : blue;
+    propiedad : valor; 
+
+    el punto y coma es para separar propiedades, en css ademas se colcoca cada
+    propiedad en un nuevo salto de linea-->
+    El color de fondo de body no afecta al color de fondo de elementos internos
+    <p>Este es un párrafo</p>
+    <pre>Este es un párrafo con estilos en archivo .css</pre>
+</body>
+</html>

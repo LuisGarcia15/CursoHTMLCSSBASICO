@@ -1,0 +1,61 @@
+/*
+Los elementos en HTML siguen una estructura de cajas.
+1-. El elemento más interior es Content (Contenido de la etiqueta)
+2-. Le sigue El Padding
+3-. Prosigue el Border
+4-. Termina la estructura con Margin
+
+Estas estructuras puedes ser modificadas con estilos
+y en sus cuatro direcciones Top(Arriba), Bottom(Abajo),
+Left(Izquierda) y Right(Derecha)
+*/
+h1{
+    color: gold
+}
+/*Padding y Border
+1-.Como primer valor de la propiedad debe ir el espacio
+en pixeles o porcentaje
+2-.Como segundo valor, que tan vistoso de verá la estructura
+esto es, si es solid, se vera la estructura, si es transparent
+no se verá
+3-. El color del la estructura
+*/
+p{
+    color: aqua;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 7px solid green;
+    margin: 100px;
+
+}
+/*Margin no debe asignale un color, solo se define
+para indicar el espacio entre elementos HTML*/
+
+pre{
+    color: brown;
+    background-color: bisque;
+    border-right: 100px;
+    padding:0px 40px 100px 50px;
+    margin: auto 40px;
+    /*El valor auto permite centrar automaticamente la
+    estructura margin y el valor siguiente en px permite
+    definir cuanto espacio dejar de margen*/
+    text-align: center;
+    /*Text align permite mover el contenido de una etiqueta
+    y su valor puede ser center*/
+}
+/*Border, Padding y Margin
+Podemos modificar sus direcciones de manera individual con
+estrucutra-[bottom|top|left|right] y su valor
+
+o
+
+Podemos modificar sus direcciones en una sola linea con
+estructura: 0     0     0     0  - para diferentes valores
+            Top-Right-Bottom-Left
+
+estructura: 0                0   - para valores iguales
+            Top|Bottom - Right-Left
+
+Esto funciona para cualquier estructura [Padding, Border, Margin]
+*/
