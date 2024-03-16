@@ -1,0 +1,13 @@
+table, th, td{
+    border: 5px solid blue;
+    /*border-collapse: collapse;*/
+    /*Border collapse permite fusionar bordes*/
+    /*border-spacing: 10px;
+    /*Border spacing especifica la distancia entre
+    bordes adyacentes, es decir la distancia de separacion
+    entre bordes de distintas celdas. No puede estar al mismo tiempo
+    que border-collapse pues esta fusiona los bordes*/
+    margin: 40px;
+    padding: 40px;
+    text-align: left;
+}

@@ -1,0 +1,47 @@
+h1{
+    color: bisque;
+}
+
+/*Permite cambiar el color del ancla inicilal, antes
+de haber hechi click, como si estyviera como nuevo
+
+Su valor por defecto es azul*/
+a:link{
+    color:yellow;
+    /*text-decoration
+    permite eliminar el subrayado por defecto
+    con none o permitir el subrayado con underline*/
+    text-decoration: none;
+}
+
+/*Permite cambiar el color del ancla visitado, una vez se
+visito el recurso
+
+Su valor por defecto es morado*/
+a:visited{
+    color:green;
+    text-decoration: none;
+}
+
+/*Permite cambiar el color del ancla cuando solocas el mouse
+encima del link
+
+Su valor por defecto es azul*/
+a:hover{
+    color:orange;
+    text-decoration: underline;
+}
+
+/*Permite cambiar el color del ancla cuando solocas el mouse
+encima del link y estas haciendo click
+
+Su valor por defecto es rojo*/
+a:active{
+    color:pink;
+    text-decoration: underline;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+}

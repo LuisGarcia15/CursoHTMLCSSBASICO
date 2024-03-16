@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links en HTML y CSS</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Luis</h1>
+    <br>
+    <a href="contenido.html">Ir a contenido</a>
+    <!-- El link tiene 3 estados:
+    -Azul: sin visitar
+    -Rojo:Activo (al mantenerlo presionado)
+    - Morado: Visitado
+    Estos colores pueden ser modificados en CSS
+-->
+    <br>
+    <!--Para colocar una imagen, que al hacer click en ella te
+    lleve a un recurso, es necesario colocar la etiqueta de img
+    dentro de la de ancla
+
+    A las imagenes no se ven afectados por los cambios de colores
+    en el link como en el de arriba-->
+    <a href="image/mario.png" target="_blank">
+        <img src="image/mario.png" alt="Imagen de mario"
+        style="width: 250px;height: 250px;">
+    </a>
+    <br>
+
+    <!--Colocando un enlace en una etiqueta button para que un botón
+    guarde el enlace a un recurso y cuando sea presionado, nos lleve
+    a ese recurso-->
+    <button>
+        <a href="image/mario.png">Botton</a>
+    </button>
+    
+
+    <!--
+        Ruta absoluta: Es aque path o ruta url completa donde
+        de encuentra un recurso. En el caso de la imagen de mario
+        es:
+
+        file:///Users/luisgarcia/Desktop/Computacion/HTML_CSS/html/links-en-html-css/image/mario.png
+        
+        Todo eso es la ruta absoluta.
+        La desventaja de esta ruta es que si cambia de lugar el recurso,
+        la ruta absoluta deja de funcionar.
+
+        Se recomienda usar cuando nos redirijamos a paginas web 
+
+        ---------------------------------------------------------------
+
+        Ruta relativa: Es aque path o ruta url parcial donde
+        de encuentra un recurso. En el caso de la imagen de mario
+        es:
+
+        image/mario.png
+        Ese pequeño path es la ruta relativa
+        
+        Se recomienda usar cuando los recursos esten dentro de la app
+        como la imagen de mario
+
+        Como dato, para no preocuparnos donde se encuentra un recurso
+        dentro de la aplicacion, podemos colocar
+        
+        /image/mario.png
+
+        No importa donde se encuentre la carpeta image, no es necesario
+        declarar la ruta absoluta, con la diagonal al inicio, la aplicacion
+        html se encargara de encontrar el recurso.
+
+        Al colocar "/" indica que nos llevara a la carpeta raiz de la
+        aplicacion
+
+        ---------------------------------------------------
+        Al colocar ../ estamos definiendo que estamos subiendo un nivel
+        en la jerarquia de carpetas. Se puede poner tantos "../" como
+        se requiera
+    -->
+</body>
+</html>

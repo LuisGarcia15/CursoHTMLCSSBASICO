@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Table
+    Permite declarar una tabla, sin embargo con solo la etiqueta table no
+    es posible construir una tabla, es necesario más etiquetas anidadas-->
+    <table border="1">
+        <!--Una tabla tiene las misma estructura que una pagina
+        html, un head, un body y un footer, es por ello que las etiquetas
+        con este nombre solo se utilizan para separar y estructurar
+        correctamente una tabla
+    
+        No es necesario colocarlos pero se recomienda por buenas prácticas-->
+    <thead>
+        <!--Table row
+            Permite definir una fila de una tabla-->
+        <tr>
+            <!-- Table head
+            Permite resaltar un elemento cual si fuera la cabecera
+            de la columna de la tabla. Permite definir el titulo de 
+            una celda. Cada nuevo th puede entenderse como definir otra
+            columna-->
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- Table data
+            Permite definir una celda o dato en una tabla. el uso
+            de la etiqueta td es para definir datos en la tabla-->
+            <td>Luis</td>
+            <td>Garcia</td>
+            <td>luis200107@icloud.com</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Sofia</td>
+            <td>Garcia</td>
+            <td>sofia200107@icloud.com</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
