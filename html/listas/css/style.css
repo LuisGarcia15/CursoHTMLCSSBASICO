@@ -1,0 +1,45 @@
+ul{
+    /* list-style-type: square;
+    Permite modificar la viñeta de los items
+    de las listas*/
+    list-style-type: none;
+    background-color: pink;
+    /*Controla que sucede al contenido
+    cuando es muy grande para caber en un area.
+    
+    Con la propiedan hidden. el contenido excendente
+    se oculta. Mostrando lo que pude visualizarse y
+    lo que no no lo muestra*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    /*Permite cambiar la distribucion de los
+    elementos de la lista haciendo que floten
+    a la izquierda o derecha*/
+    float: left;
+}
+
+li a{
+    /*Propiedad que controla como se ve un elemento
+    en la página web. Con block cada elemento se comporta
+    como bloques rectangulares que ocupan todo el ancho
+    disponible de su contenedor*/
+    display: inline-block;
+    color: skyblue;
+    text-align: center;
+    padding: 90px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:orange;
+}
+
+div{
+    float: right;
+    padding: auto;
+    background-color: aqua;
+}
