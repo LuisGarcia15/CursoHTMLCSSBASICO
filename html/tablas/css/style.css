@@ -1,13 +1,56 @@
 table, th, td{
-    border: 5px solid blue;
-    /*border-collapse: collapse;*/
+    border: 5px solid;
+    border-collapse: collapse;
     /*Border collapse permite fusionar bordes*/
     /*border-spacing: 10px;
     /*Border spacing especifica la distancia entre
     bordes adyacentes, es decir la distancia de separacion
     entre bordes de distintas celdas. No puede estar al mismo tiempo
     que border-collapse pues esta fusiona los bordes*/
-    margin: 40px;
-    padding: 40px;
-    text-align: left;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
 }
+
+caption{
+    color: orange;
+    font-family: 'Trocchi', serif;
+    font-size:50px;
+    line-height: 70px;
+    /*Line-height
+    Permite alterar la altura del contenido, por lo que
+    parecera que haya más espacio en lo alto y bajo*/
+}
+
+th{
+    color: mintcream;
+    background-color: black;
+}
+/*Renglones pares
+Siempre se consifera el primer renglon donde se hubican los
+los datos de cabecero: th*/
+
+/*nth-child(): Permite coincidir elementos por indices.
+
+permite seleccionar elementos hijos basados en su posición 
+relativa a sus hermanos dentro de un contenedor padre.
+En una tabla el contenedor padre es la tabla y seleccionara
+los elementos hermanos con base a los table data. Así mismo
+pasa con las listas
+
+even: elementos pares
+odd: elementos impares
+
+puede llevar como parámetro cualquier formula mátematica y por
+ello va a bucar. 
+
+3n+1: Coloreará aquellos indices de registros que cumplan la ecuacion
+donde n toma el valor desde 0 hasta n número*/
+tr:nth-child(3n+1){
+    background-color: aqua;
+}
+
+/*tr:nth-child(odd){
+    background-color: rgb(241, 161, 241);
+}*/

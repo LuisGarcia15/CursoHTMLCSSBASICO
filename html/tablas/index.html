@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas en HTML</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet'>
 </head>
 <body>
     <!-- Table
     Permite declarar una tabla, sin embargo con solo la etiqueta table no
     es posible construir una tabla, es necesario más etiquetas anidadas-->
-    <table border="1">
+    <table>
+        <caption>Lista de personas</caption>
+        <!--La etiqueta caption es util para colocar un título a la tabla
+        que creemos, tiene que ir inmediatamente luego de le etiqueta table-->
+
         <!--Una tabla tiene las misma estructura que una pagina
         html, un head, un body y un footer, es por ello que las etiquetas
         con este nombre solo se utilizan para separar y estructurar
@@ -26,8 +31,9 @@
             de la columna de la tabla. Permite definir el titulo de 
             una celda. Cada nuevo th puede entenderse como definir otra
             columna-->
-            <th>Nombre</th>
-            <th>Apellido</th>
+            <th colspan="2">Nombre</th>
+            <!--colspan
+            El atributo colspan permite que una celda sea parte de n columnas-->
             <th>Email</th>
         </tr>
     </thead>
@@ -38,7 +44,23 @@
             de la etiqueta td es para definir datos en la tabla-->
             <td>Luis</td>
             <td>Garcia</td>
-            <td>luis200107@icloud.com</td>
+            <td rowspan="2">luis200107@icloud.com</td>
+            <!--rowspan
+            El atributo rowspan permite que un registro sea parte de n registros-->
+        </tr>
+        <tr>
+            <td>Gus</td>
+            <td>Santillan</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>Santillan</td>
+            <td>gas@hotmail.com</td>
+        </tr>
+        <tr>
+            <td>Jaime</td>
+            <td>Santillan</td>
+            <td>sdmd@hotmail.com</td>
         </tr>
     </tbody>
     <tfoot>
