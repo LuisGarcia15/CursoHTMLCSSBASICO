@@ -1,0 +1,57 @@
+ol{
+    list-style: none;
+    counter-reset: count;
+    /*Una vez inicializado, se lo aplicamos a cada elementos de la
+    lista para que incremente con cada nuevo elemento y lleve la palabra
+    lenguaje*/
+}
+
+ol li{
+    counter-increment: count;
+    /*Incrementa cada nueva viñeta junto con el valor de Lenguaje y un
+    número*/
+}
+ /*Selector
+ 
+ Es un patrón de elementos y otros términos que indican 
+ al navegador qué elementos HTML se seleccionan para aplicarles 
+ una regla que incluye los valores de las propiedades CSS
+ 
+ Estos son:
+- las etiquetas HTML
+
+- Pseudoclases: Aplican estilos a estados a un elemento, por ejemplo
+hoover de un ancla (a:hoover) para colocar un color cuando el ratón
+esta encimia del enlace.
+
+- Pseudoelementos: Seleccionan una parte de un elemento para aplicar
+un estilo en vez de todo el estilo. Como aqui aplicar un estilo a las
+viñetas en ves de a todo el elemento de la lista (li::before). Con
+li::after coloca elementos luego de cada valor de la lista
+
+- Combinadores: combina otros selectores con el fin de delimitar elementos
+por ejemplo (article > p) selecciona los parrafos que son hijos de article
+y les aplica un estilo*/
+
+ol li::before{
+    /*Permite agregar un estilo a lo que esta antes del elemento de los items
+    (viñetaz)*/
+    content: 'Lenguaje' counter(count) '] ';
+    /*La propiedad content permite definir un valor para las viñetas.
+    
+    la función counter permite llevar un contador. Debe inicializarse al
+    crearce la estructura de la lista ordenada
+    
+    Cabe destacar que se esta concatenando Lenguaje + contador + ] para cada
+    elemento
+    
+    Counter devuelve el valor en String que representa el valor actual del contador,
+    por lo que debe incrementarse en algun momento. esto es cuando se definine un
+    elemento de la lista. de no incrementarse, el valor no cambiará.
+    
+    De igual forma el valor del contador debe inicializarse en algun momento, esto es
+    cuando se crea la estructura de la lista, para que cuando la estructura tenga un
+    item, se incremente. de no ser así, el contador quedaria en un valor constante si
+    se inicializa cuando se crean los items en la estructura.*/
+    color: cornflowerblue;
+}
