@@ -1,0 +1,29 @@
+/*  . | Clase de CSS
+Con "." permite acceder a una clase de un elemento HTML*/
+
+/*Si por alguna razon tuvieramos que definir un estilo para
+toda la hoja y todos los estilos HTML, puedes utilizar:
+*{
+    color:blue;
+}
+
+*/
+.tarjeta{
+    border: 10px solid antiquewhite;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 30px;
+}
+
+h1{
+    color: pink;
+    text-align: center;
+}
+
+a:visited{
+    color: aqua;
+}
+
+a{
+    text-decoration: none;
+}

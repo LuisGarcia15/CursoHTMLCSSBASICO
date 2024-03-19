@@ -1,0 +1,20 @@
+pre span{
+    color: aqua; 
+    border: 1px solid black;
+}
+
+h1{
+    color: rgba(1, 188, 251, 0.527);
+    text-align: center;
+}
+
+h2{
+    color: rgb(222, 152, 47);
+}
+div{
+    border: 10px solid red;
+    background-color: blueviolet;
+    text-align: center;
+    /*Todos los elementos de texto que se encuentren en el DIV,
+    con text-align, se moveran al centro*/
+}
