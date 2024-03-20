@@ -1,0 +1,24 @@
+.titulo{
+    color:aqua;
+    text-align: center;
+}
+
+.marco{
+    width: 100%;
+    height: 200px;
+    border: 1px solid aqua;
+}
+
+#enlace{
+    text-decoration: none;
+}
+
+#button{
+    width: 35%;
+    height: 25%;
+}
+
+div{
+    text-align: center;
+}
+

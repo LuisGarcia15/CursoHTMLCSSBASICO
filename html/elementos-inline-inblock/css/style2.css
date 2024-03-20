@@ -1,5 +1,9 @@
 /*  . | Clase de CSS
-Con "." permite acceder a una clase de un elemento HTML*/
+Con "." permite acceder a una clase de un elemento HTML
+o elementos HTML*/
+
+/*  # | id de CSS
+Con "#" permite acceder a un id de un elemento HTML*/
 
 /*Si por alguna razon tuvieramos que definir un estilo para
 toda la hoja y todos los estilos HTML, puedes utilizar:
@@ -15,9 +19,10 @@ toda la hoja y todos los estilos HTML, puedes utilizar:
     margin: 30px;
 }
 
-h1{
+#titulo_principal{
     color: pink;
     text-align: center;
+    background-color: aquamarine;
 }
 
 a:visited{

@@ -7,31 +7,63 @@
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-    <h1>Lenguajes de Programación</h1>
+    <!--Un elemento HTML puede combinar propiedades Class
+    y propiedades ID sin ningun problema-->
+    <h1 id="titulo_principal">Lenguajes de Programación</h1>
+    <!--Propiedad ID
+    Permite definir una ID para que sea utilizada
+    en Javascript o CSS. En CSS se llama con "#", esto
+    funciona para definir estilos en elementos html que
+    solo requeramos. el nombre del ID debe ser UNICO por
+    para cada archivo HTML y no puede ser compartido entre
+    elementos.
+
+    el nombre debe llevar caracteres epeciales y si requieres 
+    espacios o tienes más de una palabra, se colocan con guión 
+    bajo o guion medio-->
     <div class="tarjeta">
         <!--Propiedad class
         Permite definir una clase para que sea utilizada
         en Javascript o CSS. En CSS se llama con ".", esto
         funciona para definir estilos en elementos html que
-        solo requeramos.
+        solo requeramos. el nombre de la clase puede ser utilizado
+        por varios elementos HTML
     
         el nombre debe llevar caracteres epeciales y si requieres 
         espacios o tienes más de una palabra, se colocan con guión 
         bajo o guion medio-->
-        <h2>Java</h2>
+        <h2 id="java">Java</h2>
         <p>Creador: James Gosling</p>
     </div>
     <div class="tarjeta">
-        <h2>Python</h2>
+        <h2 id="python">Python</h2>
         <p>Creador: Guido Van Rossum</p>
     </div>
     <div class="tarjeta">
-        <h2>JavaScript</h2>
+        <h2 id="javascript">JavaScript</h2>
         <p>Creador: Brendan Eich</p>
     </div>
     <div>
         <h2>Resumen de lenguaje</h2>
         <a href="https://github.com/LuisGarcia15" target="_blank">Github</a>
     </div>
+    <a href="#java">Regreso a Java</a>
+    <br>
+    <!--Bookmark
+    Podemos regresar a un elemento en la página html colocando como
+    ruta el id al que queremos regresar, esto es estar dentro de la
+    página html y regresar a un parte dentro de la misma página html.
+    Se le conoce como Bookmarks-->
+    <a href="#python">Regreso a Python</a>
+    <!--Los bookmarks pueden incluirse en la ruta HTTP, para al cargarla
+    ingresar a esa zona de la página. Por ejemplo:
+
+    file:///Users/luisgarcia/Desktop/Computacion/HTML_CSS/html/elementos-inline
+    -inblock/div.html#java
+
+    Esta ruta al cargarla mostrara la tarjeta Java desde el inicio y no
+    toda la página html-->
+    <br>
+    <a href="#javascript">Regreso a Javascript</a>
 </body>
 </html>
