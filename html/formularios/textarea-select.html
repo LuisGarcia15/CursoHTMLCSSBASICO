@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextArea y Select en formularios</title>
+</head>
+<body>
+    <form>
+        <label for="autos">Marca de autos:</label>
+        <select name="autos" id="autos">
+            <option value="Ford" selected="true">Ford</option>
+            <option value="WolksVagen">WolksVagen</option>
+            <option value="Mercedez Bens">Mercedez Benz</option>
+        </select>
+        <input type="submit" value="Enviar">
+        <!--Selected - choicebox
+        la etiqueta selected permite definir varias opciones de un
+        listado y seleccionar una. La estructura base se coloca con
+        selected y cada opción se coloca con option dentro de la base
+        de selected.
+
+        Si una una opcion requieres que aparezca al inicio como una
+        seleccion predeterminedad, en la etiqueta opción correspondiente
+        colocaras la propiedad selected="true".
+
+        El valor que se envía en la solicitud HTTP es el valor de la
+        propiedad value.
+
+        Podemos colocar la propiedad multiple="true" en la etiqueta select
+        para poder seleccionar multiples opciones del select y se envien
+        como un array al servidor
+        -->
+    </form>
+</body>
+</html>

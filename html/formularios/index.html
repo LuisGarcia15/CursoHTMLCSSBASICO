@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="">
+        <!--Estructura básica de un formulario, así como una tabla tiene
+        la etiqueta <table> para definir la estructura de una tabla, para un
+        formulario, tenemos la etiqueta <form>
+            
+        * La propiedad novalidate en la etiqueta form desactiva la validacion 
+        del navegador web. Esto es util cuando la validación la requerimos hacer
+        nosotros por parte de javascript u otra forma externa-->
+            <label for="nombre">Nombre:</label>
+            <!--label
+            Un label permite agregar un texto descriptivo acerca de algo que se
+            espera en un elemento de ingreso de data de formulario. además
+            permite enlazar elementos de formulario junto con su texto descriptivo.
+            
+            Esto se hace con la propiedad en for=""" colocando el id del elemento
+            de formulario para enlazarlo. Así poniendo este ejemplo, al hacer click
+            en el texto nombre: se auto colocará la escritura en el input de tipo
+            texto para ingresar un texto.-->
+            <input type="text" id="nombre" name="nombre" placeholder="nombre" required="true">
+            <!--input
+            Permite capturar elementos de entrada de un usuario en html. Existen
+            de distintos tipos, como:
+            -text
+            -date
+            -emial
+            -entre otros
+            Siempre es recomendable asignar un id a las estructuras de formulario
+            para identificar el dato que se guarda.
+        
+            * La propiedad value="" permite prellenar los elementos <input>
+            * La propiedad name="" en un elemento input, son el nombre de las variables
+            que usa un input para enviar los datos al servidos web. Aparecen en la url como
+            dato-valor como lo hace al utilizar @RequestParam en Spring
+            *la propiedad placeholder="" permite colocar un texto descriptivo para indicar
+            que necesita el input, pero que no es data que se puede enviar. En cuanto el
+            usuario llene el campo de texto, el valor de placeholder se eliminará
+            *la propiedad require="true" permite mostrar una ventana de error y avisar que
+            es requerido el llenado del campo. Con esto garantizas que siempre se llene el
+            campo
+            -->
+            <input type="submit" value="Enviar"><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="apellido" required="true">
+            <!--El tipo submit de un input permite crear un botón especializado
+            para enviar data al backend. La propiedad value permite definir el
+            texto que tendrá el botón-->
+            <input type="submit" formnovalidate="formnovalidate"> 
+            <!--Boton especial que no permite la validación por parte del navegador
+            web de la información antes de ser enviada a un servidor.
+            
+            Esto se hace gracias a la propiedad formnovalidate="formnovalidate"-->
+    </form>
+</body>
+</html>

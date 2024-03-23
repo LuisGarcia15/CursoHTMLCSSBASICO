@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email - Number en formularios</title>
+</head>
+<body>
+    <form>
+        <!--La propiedad action permite enviar la data del formulario
+        a una URL. Por ejemplo, es posible enviarla a us Script para 
+        tratar la información-->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <!--input
+        La etiqueta input en html permite recibir datos con cierta
+        estructura. Ya se vio que un tipo password permite ingresar
+        contraseñas de manera segura. Aqui hay otros ejemplos:
+    
+        - type email: Permite solo el ingreso de data en forma de la
+        estructrua de email. email@dominio.x, si no se incluye asi, se 
+        muestra una ventana de error.-->
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age"><br>
+        <!--
+        - type number: Permite solo el ingreso de datos númericos.No permite
+        entradas String. Con la propiedad step="any" permite el ingreso de
+        entradas Int, Double o Float-
+        -->
+        <label>Genero</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label>Femenino</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label>Masculino</label><br>
+        <!--
+        - type radio: Permite generar radiobuttons para seleccionar una opción
+        de varias listadas, como se pueden definir tantas opciones como se quiera,
+        todos los radiobutton que sean opciones de una misma elección, deben llevar
+        en el atributo "name", el mismo valor. Asi si tienes 3 radiobuttons y solo
+        debes seleccionar 1, html va a solo enviar el dato del seleccionado siempre y
+        cuando el name sea el mismo en los 3 radiobuttons pues comparten una eleccioón
+        de un mismo tema. Te daras cuenta ya que si n radiobuttons estan asociados, si 
+        seleccionas un de los n posibles, solo se matendra seleecionado uno cuando
+        compartan el name y por tanto, una misma posible elección.
+
+        El valor que se envía en el protocolo HTTP es el data de value asociado al 
+        valor de name de los radiobutton.
+
+        Se acostubra a solo seleccionar un valor de n de un radiobutton
+        -->
+        <label>Música favorita:</label><br>
+        <input type="checkbox" name="musica" id="musica" value="ImagineDragons">
+        <label>Imagine Dragons</label><br>
+        <input type="checkbox" name="musica" id="musica" value="ColdPlay">
+        <label>ColdPlay</label><br>
+        <!--
+        - type checkbox: Permite generar checkboxes para seleccionar una opción o
+        varias opciones de varias listadas, como se pueden definir tantas opciones 
+        como se quiera, todos los checkboxes que sean opciones de una misma elección,
+        deben llevar en el atributo "name", el mismo valor. Asi si tienes 3 checkboxes
+        y debes seleccionar 1 o varios, html solo va a enviar los datos seleccionados 
+        siempre y cuando el name sea el mismo en los 3 checkboxes pues comparten una 
+        eleccioón de un mismo tema.
+
+        El valor que se envía en el protocolo HTTP es el data de value asociado al 
+        valor de name de los checkboxes.
+
+        Se acostubra a solo seleccionar un valor de n  o varios valores de n valores
+        de un checkbox. Se genera un arreglo de valores de checkbox cuando se 
+        envian varios checkboxes en lazados por un name
+        -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
