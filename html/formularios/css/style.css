@@ -1,0 +1,80 @@
+html{
+    height: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,rgb(32, 215, 215), rgb(10, 118, 161));
+    /*linear-gradient
+    se utiliza para crear gradientes lineales, es decir, transiciones suaves 
+    de color que se aplican a elementos HTML. Estos gradientes pueden ir de
+    un color a otro en una dirección específica.
+
+    Donde:
+
+    * dirección: Especifica la dirección del gradiente, puede ser en grados (deg), 
+    radianes (rad), grados del sistema de coordenadas cardinal (to top, to right,
+     to bottom, to left, to top right, etc.), o porcentajes.
+     
+    * color1, color2, ...: Los colores entre los cuales se hará la transición.
+    */
+}
+
+.contenedor{
+    margin:50px auto;
+    width: 500px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50px;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 40px;
+    color: aquamarine;
+    text-align: center;
+}
+/*Selectores: Pueden anidarse selectores para especificar
+el elemento html a estilizar*/
+.contenedor .elemento label{
+    color: aquamarine;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/*Selectores: Pueden anidarse selectores utilizando una propiedad
+para especificr el elemento html a estilizar*/
+.contenedor .elemento input[type="submit"]{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /*cursor:valor;
+    se utiliza para controlar la apariencia del cursor del mouse cuando 
+    está sobre un elemento interactivo en una página web. Esta propiedad 
+    permite cambiar el cursor del mouse para indicar diferentes acciones 
+    o estados
+
+    Algunos de los valores comunes que se pueden utilizar con la propiedad cursor incluyen:
+
+    * auto: El navegador determina el cursor apropiado basado en el contexto.
+    * default: El cursor predeterminado del sistema (generalmente una flecha).
+    * pointer: Indica que el elemento es interactivo y el cursor será una mano, 
+    típicamente usado para enlaces (<a>), botones y otros elementos clicables.
+    * wait: Indica que el usuario debe esperar, generalmente se muestra como un 
+    reloj de arena o un círculo giratorio.
+    * text: Indica que el texto puede ser seleccionado, comúnmente mostrado como 
+    un cursor de I-beam.
+    * crosshair: Muestra un cursor en forma de cruz.
+    * move: Indica que el usuario puede mover el elemento.
+    * not-allowed: Indica que la acción no está permitida, mostrando un cursor de 
+    prohibido o no disponible.
+    */
+}

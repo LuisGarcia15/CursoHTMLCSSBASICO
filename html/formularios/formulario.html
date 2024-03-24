@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Div
+    Permite organizar y estruvutrar elemetnos html en contenedores
+    o divisiones en una página web
+
+    recordemos que el valor de un div de la propiedad display es
+    block-->
+    <div class="contenedor">
+        <h2>Login</h2>
+        <form id="formulario" name="formulario" method="post">
+            <div class="elemento">
+                <label for="user">User: </label>
+                <input type="text" id="user" name="user" required="true"
+                placeholder="Enter your user">
+            </div>
+            <div class="elemento">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                required="true" placeholder="Enter your password">
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
