@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros elementos</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="user">User:</label>
+            <input type="text" placeholder="user" name="user">
+            <label for="user">Password:</label>
+            <input type="password" placeholder="password" name="password"><br>
+            <input type="submit" value="Submit">
+            <!-- ***************** Nuevos Elementos ******************** -->
+            <h1>Nuevos elementos</h1>
+            <input type="reset" value="Reset"><br>
+            <label for="nombre">Name:</label>
+            <input type="text" placeholder="nombre" 
+            name="nombre" id="nombre" readonly="true" value="Solo lectura">
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+            <!-- 
+            * propiedad type:reset
+            Permite generar un botón que al presionar, reinicio los elemtos
+            en entrada de un formulario
+            * propiedad readonly="true"
+            Permite que un elemento de tipo input solo sea de solo lectura
+            y no se pueda modificar su valor, sin embargo, el valor que tenga,
+            al ser enviado en una petición HTTP, será respetado. En este caso
+            el valor "Solo lectura" se enviara en el dato nombre.
+            * propiedad type:"hidden"
+            Permite generar un input que reciba información del servido o envíe
+            información al servidor pero sera una entrada de datos oculta, si embargo,
+            envia su valor en la petición HTTP
+            * propiedad disabled="true"
+            Permite desabilitar un input, ahora no puede siquiera seleccionarse a diferencia
+            de la propiedad readonly. Otra diferencia con readonly es que al usar disabled,
+            el valor del input no se enviará en la petición HTTP, en modo lectura si
+            -->
+        </fieldset>
+    </form>
+</body>
+</html>

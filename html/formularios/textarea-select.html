@@ -13,7 +13,7 @@
             <option value="WolksVagen">WolksVagen</option>
             <option value="Mercedez Bens">Mercedez Benz</option>
         </select>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar"><br>
         <!--Selected - choicebox
         la etiqueta selected permite definir varias opciones de un
         listado y seleccionar una. La estructura base se coloca con
@@ -25,12 +25,20 @@
         colocaras la propiedad selected="true".
 
         El valor que se envía en la solicitud HTTP es el valor de la
-        propiedad value.
+        propiedad value asociado a la "variable" de propiedad name.
 
         Podemos colocar la propiedad multiple="true" en la etiqueta select
         para poder seleccionar multiples opciones del select y se envien
         como un array al servidor
         -->
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" cols="1" rows="1"
+        placeholder="comentario"></textarea>
+        <!--textarea
+        Input que permite incresar un conjunto de caracteres cual texto.
+        es posbile definir las columnas y filas, estas no son los caracteres
+        que acepta, sino el tamaño por defecto que tendra el text area. Siempre
+        que debas enviar texto, se recomienda el uso de text area.-->
     </form>
 </body>
 </html>
