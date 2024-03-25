@@ -1,0 +1,56 @@
+header{
+    color: greenyellow;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav{
+    width: 20%;
+    float: left;
+}
+
+nav a{
+    background-color: aquamarine;
+    border-radius: 10px 0 10px 0;
+    color: #000;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+section{
+    float:right;
+    width: 75%;
+    color: rgb(54, 138, 138);
+    border-radius: 9px;
+    box-shadow: 1px 0 4px rgb(16, 244, 0);
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding:  15px;
+    display: inline-block;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    box-shadow: inset 5px 0  5px -5px rgb(41, 88, 5);
+}
+
+footer{
+    clear: both;
+    /*clear:both;
+    Permite que los elementos que estan flotando no se aplican
+    a elementos en el footer, haciendo que los elementos del footer
+    se apliquen en la siguiente línea como si tuvieran display: block;*/
+    padding: 1px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
