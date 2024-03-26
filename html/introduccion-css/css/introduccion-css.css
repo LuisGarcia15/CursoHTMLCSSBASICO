@@ -1,0 +1,20 @@
+/*external ccs*/
+/*CSS
+MEJORA VISUALMENTE las etiquetas HTML*/
+ /*Selector
+ Es el nombre de la etiqueta HTML a estilizar*/
+ h1{
+    /*Estilos que afectan la imagen de un elemento html.
+    *
+    *
+    *Son estilos en tipo propiedad-valor, donde la propiedad
+    *es una caracteristica que se afecta por css y el valor
+    *es como lo afecta
+    */
+    color: aqua !important;
+    /*!important
+    Es una notación para indicar que los estilos definidos
+    en un archivo.css tiene proriedad que aquellos definidos
+    en internal CSS e inlineCSS */
+    text-align: right;
+ }
