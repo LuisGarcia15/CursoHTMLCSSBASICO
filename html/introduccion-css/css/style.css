@@ -1,0 +1,22 @@
+/*ID selector
+Se utiliza el simbolo de # junto con el nombre del
+id que identifica a una etiqueta HTML. No debe
+iniciar el nombre con numeros. en caso de tener más
+de una palabra, se usa - o _*/
+#titulo{
+    color: crimson;
+    text-align: center;
+}
+
+/*Class selector
+Se utiliza el simbolo de . junto con el nombre de la
+clase que identifica a una etiqueta HTML. No debe
+iniciar el nombre con numeros. en caso de tener más
+de una palabra, se usa - o _*/
+.centrar{
+        text-align: center;
+}
+
+.texto_grande{
+    font-size: 30px;
+}
